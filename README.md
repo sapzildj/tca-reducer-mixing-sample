@@ -23,13 +23,11 @@ Reducer 프로토콜 기반으로 구현하고 `body`에서 Scope와 Reduce를 �
 ```
 Sources/TcaReducerMixingSample/
 ├── RootFeature/
-│   └── RootFeature.swift       # Scope를 통한 Reducer 조합
+│   └── RootFeature.swift       # Reducer 프로토콜 기반, Scope를 통한 Reducer 조합
 ├── NewFeature/
 │   └── NewCounterFeature.swift # @Reducer 매크로 기반 Feature
-├── LegacyFeature/
-│   └── LegacyCounterFeature.swift # Reducer 프로토콜 기반 Feature
 ├── UI/
-│   └── ContentView.swift       # Preview 테스트용 UI
+│   └── ContentView.swift       # 테스트용 UI
 └── TcaReducerMixingSampleApp.swift
 ```
 
